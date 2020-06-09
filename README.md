@@ -1,6 +1,6 @@
 PomTracker
 =================
-![App screenshot](client/public/images/pomtracker-screenshot.png)
+![App screenshot](public/images/pomtracker-screenshot.png)
 
 ## Live App
 https://pomtracker.haydenhw.com/
