@@ -10,7 +10,6 @@ import {
 } from '../helpers/projects';
 
 export const ADD_PROJECT = 'ADD_PROJECT';
-
 export function addProject(projectName) {
   const newProject = {
     projectName,
@@ -25,7 +24,6 @@ export function addProject(projectName) {
 }
 
 export const DELETE_PROJECT_REQUEST = 'DELETE_PROJECT_REQUEST';
-
 export function deleteProject(project) {
   return (dispatch) => {
     dispatch({
@@ -46,7 +44,6 @@ export function deleteProject(project) {
 }
 
 export const DELETE_TASK_REQUEST = 'DELETE_TASK_REQUEST';
-
 export function deleteTask(project, task, updateLocalState = false) {
   return (dispatch) => {
     if (updateLocalState) {
@@ -71,7 +68,6 @@ export function deleteTask(project, task, updateLocalState = false) {
 }
 
 export const POST_PROJECT_SUCCESS = 'POST_PROJECT_SUCCESS';
-
 function postProjectSuccess(clientId, databaseId) {
   return {
     type: POST_PROJECT_SUCCESS,
@@ -81,7 +77,6 @@ function postProjectSuccess(clientId, databaseId) {
 }
 
 export const POST_TASK_SUCCESS = 'POST_TASK_SUCCESS';
-
 function postTaskSuccess({projectDatabaseId, taskClientId, taskDatabaseId}) {
   return {
     type: POST_TASK_SUCCESS,
@@ -177,7 +172,6 @@ export function postTask(projectDatabaseId, task) {
 }
 
 export const QUEUE_NEW_PROJECT = 'QUEUE_NEW_PROJECT';
-
 export function queueNewProject(projectName) {
   return {
     type: QUEUE_NEW_PROJECT,
@@ -186,7 +180,6 @@ export function queueNewProject(projectName) {
 }
 
 export const UPDATE_TASK_REQUEST = 'UPDATE_TASK_REQUEST';
-
 export function updateTask(project, task, toUpdate) {
   return (dispatch) => {
     dispatch({
@@ -218,7 +211,6 @@ export function setActiveTask() {
 }
 
 export const SET_SELECTED_PROJECT = 'SET_SELECTED_PROJECT';
-
 export function setSelectedProject(projectId) {
   return (dispatch) => {
     dispatch({
@@ -231,7 +223,6 @@ export function setSelectedProject(projectId) {
 }
 
 export const SET_SELECTED_TASK = 'SET_SELECTED_TASK';
-
 export function setSelectedTask(taskId) {
   return (dispatch) => {
     dispatch({
@@ -279,7 +270,6 @@ export function switchRecordingTask(taskId) {
 
 export const FETCH_PROJECTS_SUCCESS = 'FETCH_PROJECTS_SUCCESS';
 export const TOGGLE_FETCHING = 'TOGGLE_FETCHING';
-
 export function fetchProjects(userId, jwt) {
   return (dispatch) => {
     if (false && !jwt) {
@@ -317,7 +307,6 @@ export function fetchProjects(userId, jwt) {
 }
 
 export const UPDATE_PROJECT_NAME_REQUEST = 'UPDATE_PROJECT_NAME_REQUEST';
-
 export function updateProjectName(project, newName) {
   return (dispatch) => {
     dispatch({
@@ -356,7 +345,6 @@ const postUnsavedTasks = (dispatch, selectedProjectDatabaseId, tasks) => {
 };
 
 export const UPDATE_TASKS = 'UPDATE_TASKS';
-
 export function updateTasks(selectedProject, tasks) {
   return (dispatch) => {
     const tasksToSubmit = tasks.filter(task => !task.shouldDelete);

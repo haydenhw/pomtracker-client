@@ -5,6 +5,15 @@ PomTracker
 ## Live App
 https://pomtracker.haydenhw.com/
 
+
+## Client Repo
+https://github.com/haydenhw/pomtracker-client
+
+
+## Server Repo
+https://github.com/haydenhw/pomtracker-flask
+
+
 ## Summary
 A [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) timer with integrated time tracking. This app was built with my own use in mind as I
 struggled to find an existing solution to manage my break schedules and track time simultaneously. I use this app all day every day to manage my pomodoro sessions and keep my weekly productivity goals on track.
@@ -14,12 +23,14 @@ struggled to find an existing solution to manage my break schedules and track ti
 * Redux
 * Redux-Form
 * SCSS
-* Node
-* Express
+* Flask
+* Pytest
+* Marshmallow
+* SQLAlchemy
 * PostgreSQL
-* Knex
-* Mocha
-* Heroku
+* Docker
+* AWS (EC2, S3, CloudFront)
+
 
 API Docs
 =================
