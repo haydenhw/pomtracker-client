@@ -74,6 +74,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "deploy": "netlify deploy -d build --prod",
+    "useCloudServer": "REACT_APP_LOCAL_URL=https://lula.casa/ttflask yarn start",
     "test": "mocha",
     "echo": "pwd || exit 0",
     "lint": "eslint --ext .js --ext .jsx $path || exit 0",
